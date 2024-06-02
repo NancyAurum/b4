@@ -1,9 +1,9 @@
 # b4
  4-bit opcode VM without jump addresses
 
+Compile and run:
 ```
-Compile: cc b4.c -o b4
-./b4.exe "'Hello, World!'.say"
+cc b4.c -o b4 && ./b4.exe "'Hello, World!'.say"
 ```
 
 Features:
