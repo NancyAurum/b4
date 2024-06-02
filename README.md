@@ -21,10 +21,10 @@ The ideas is to replace the `jmp address` instruciton with four opcodes
 These are used for both looping, branching and jumping, allowing for high-level looking constructs like
 ```
   Value [ CodeIfTrue 0<] CodeIfFalse>  ; If/Else
-  Count=?[?.top]                       ; Loop `Count` times, priting counter
+  Count=?[?.top]                       ; Loop `Count` times, printing counter
 ```
 
-The destinations these `[` and `]` are resolved when they are encountered.
+The destinations for these `[` and `]` are resolved when they are encountered.
 
 As a result, instructions become smaller in size (we don't read immediate unless we need it). It also means we can easily stitch the chunks of compiled code, without doing relocation:
 ```
