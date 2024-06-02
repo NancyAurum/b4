@@ -1,6 +1,11 @@
 # b4
  4-bit opcode VM without jump addresses
 
+```
+Compile: cc b4.c -o b4
+./b4.exe "'Hello, World!'.say"
+```
+
 Features:
 1. succinct yet readable assembly syntax
 2. tiny bytecode sizes.
@@ -37,13 +42,7 @@ computed_jump:1000+.:   ; add 1000 to the argument and call it
 1.computed_jump         ; says B
 ```
 
-
 see b4.c for more info.
-
-```
-Compile: cc b4.c -o b4
-./b4.exe "'Hello, World!'.say"
-```
 
 
 Bytecode sizes of typical operations
