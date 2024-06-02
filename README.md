@@ -40,11 +40,9 @@ computed_jump:1000+.:   ; add 1000 to the argument and call it
 
 see b4.c for more info.
 
-Compile: cc b4.c -o b4
-
-
 ```
-'Hello, World!'.say
+Compile: cc b4.c -o b4
+./b4.exe "'Hello, World!'.say"
 ```
 
 
